@@ -1,10 +1,9 @@
-$yellow: rgb(255,210,0)
-$Roboto-Light: Roboto-Light, sans-serif
 #requires
     width: 60%
     margin: 70px auto
     .downloadContainer
         display: flex
+        flex-wrap: wrap
         justify-content: center
         .requirerow
             .Radius
@@ -19,6 +18,9 @@ $Roboto-Light: Roboto-Light, sans-serif
                 border-top: 5px $yellow dashed
                 margin-top: 60px
                 width: 140px
+        @media(max-width: 1518px)
+            .l3
+                display: none
     p
         font-size: 22px
         padding-top: 15px

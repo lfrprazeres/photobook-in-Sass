@@ -50,29 +50,29 @@ header {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 50px 0 450px 0; }
+  padding: 50px 0 450px 0;
+  height: 550px; }
 
 .welcome h1 {
   font-size: 55px;
-  font-variant: small-caps;
   font-family: Roboto-thin, sans-serif;
   letter-spacing: 4px;
   word-spacing: 5px; }
 .welcome p {
   margin-top: 5px;
-  margin-bottom: 100px;
-  font-size: 26px; }
+  margin-bottom: 80px;
+  font-size: 24px; }
 
 .buttonTransparent {
-  border-radius: 7px;
+  border-radius: 10px;
   padding: auto 0;
   background-color: transparent;
   font-family: Roboto-Light, sans-serif;
-  width: 430px;
+  width: 380px;
   height: 70px;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 2px;
-  border: 1px solid black;
+  border: 0.5px solid black;
   text-transform: uppercase; }
 
 #requires {
@@ -80,6 +80,7 @@ header {
   margin: 70px auto; }
   #requires .downloadContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
     #requires .downloadContainer .requirerow .Radius {
       width: 120px;
@@ -93,6 +94,9 @@ header {
       border-top: 5px #ffd200 dashed;
       margin-top: 60px;
       width: 140px; }
+@media(max-width: 1518px) {
+  #requires .downloadContainer .l3 {
+    display: none; } }
   #requires p {
     font-size: 22px;
     padding-top: 15px;
@@ -126,11 +130,139 @@ header {
         font-family: Roboto-Light, sans-serif;
         font-size: 18px;
         margin: 5px 0; }
-  #advantage .buttonred {
-    background-color: #e11a27;
-    border: 1px solid #e11a27;
-    margin-top: 85px; }
-    #advantage .buttonred a {
-      color: white; }
+
+.buttonred {
+  background-color: #e11a27;
+  border: 1px solid #e11a27;
+  margin-top: 85px;
+  width: 400px;
+  font-size: 27px; }
+  .buttonred a {
+    color: white; }
+
+#terms {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center; }
+  #terms .termsContainer, #terms .payment, #terms .shipping {
+    width: 320px; }
+
+.termsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .termsGrid .h1Terms, .termsGrid .h1Payment, .termsGrid .h1Shipping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto-Light, sans-serif;
+    letter-spacing: 1px;
+    margin: 5px 0 10px 0;
+    font-size: 24px;
+    background-color: #ffd200;
+    border-radius: 7px 7px 0 0;
+    height: 70px; }
+@media(max-width: 1200px) {
+  .termsGrid .h1Terms, .termsGrid .h1Payment, .termsGrid .h1Shipping {
+    margin-top: 30px; } }
+    .termsGrid .h1Terms h1, .termsGrid .h1Payment h1, .termsGrid .h1Shipping h1 {
+      padding: 3px 0;
+      font-weight: 100;
+      font-variant: small-caps; }
+  .termsGrid .pTerms, .termsGrid .pPayment, .termsGrid .pShipping {
+    background-color: #f7f0e6;
+    border-radius: 0 0 6px 6px;
+    height: 230px;
+    display: flex;
+    text-align: left; }
+  .termsGrid .pTerms p, .termsGrid .pShipping p, .termsGrid .pPayment div {
+    margin: 30px auto;
+    width: 215px; }
+  .termsGrid .pPayment div ul {
+    padding: 10px 0 0 30px; }
+    .termsGrid .pPayment div ul li {
+      padding: 4px 0;
+      list-style-type: disc; }
+
+#testimonials {
+  background-image: url("../img/bg-testimonials.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0 50px 0; }
+  #testimonials .testimonialsContainer {
+    width: 500px;
+    margin: 0 0 0 80px; }
+    #testimonials .testimonialsContainer div {
+      padding: 10px 0; }
+  #testimonials h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-weight: 100;
+    font-variant: small-caps;
+    font-family: Roboto-thin, sans-serif; }
+  #testimonials .row2 {
+    display: flex;
+    align-items: center; }
+    #testimonials .row2 p {
+      padding-left: 30px; }
+      #testimonials .row2 p:first-child {
+        font-size: 36px; }
+  #testimonials .row3 {
+    margin-bottom: 100px; }
+    #testimonials .row3 .next {
+      float: right;
+      padding-top: 10px; }
+  #testimonials .bcenter {
+    display: flex; }
+    #testimonials .bcenter button {
+      margin: 0 auto; }
+
+footer {
+  background-color: #ffd200;
+  padding: 50px 0 150px 0; }
+  footer .footerContainer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; }
+    footer .footerContainer .column123 {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 140px 0 80px;
+      justify-content: space-between; }
+      footer .footerContainer .column123 nav {
+        padding-top: 25px;
+        width: 120px;
+        border-top: 1px solid black; }
+@media(max-width: 928px) {
+  footer .footerContainer .column123 nav {
+    margin-top: 20px; } }
+        footer .footerContainer .column123 nav ul {
+          width: 70%;
+          margin: 0 auto;
+          float: left; }
+          footer .footerContainer .column123 nav ul li {
+            padding: 5px 0;
+            font-variant: small-caps; }
+    footer .footerContainer .column4 {
+      flex: 1;
+      display: flex; }
+@media(max-width: 928px) {
+  footer .footerContainer .column4 {
+    margin-top: 20px; } }
+      footer .footerContainer .column4 nav {
+        border-top: 1px solid black;
+        padding-top: 25px;
+        width: 160px;
+        margin-left: 80px; }
+        footer .footerContainer .column4 nav ul {
+          width: inherit;
+          display: flex; }
+          footer .footerContainer .column4 nav ul li {
+            padding: 0 7px; }
+  footer p {
+    padding-top: 150px;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
