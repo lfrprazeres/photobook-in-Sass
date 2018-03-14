@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@font-face {
+  font-family: Roboto-thin;
+  src: url(../fonts/Roboto-Thin.ttf); }
+@font-face {
+  font-family: Roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto-light;
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: Roboto-light-italic;
+  src: url(../fonts/Roboto-LightItalic.ttf); }
+@font-face {
+  font-family: Roboto-bold-italic;
+  src: url(../fonts/Roboto-BoldItalic.ttf); }
+* {
+  font-family: Roboto-regular, sans-serif;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+#navbar {
+  min-height: 80px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  justify-content: space-between; }
+  #navbar div {
+    height: 50%; }
+  #navbar div:nth-child(1) a:first-child {
+    margin-left: 70px; }
+  #navbar div:nth-child(1) a {
+    padding: 10px; }
+  #navbar div:nth-child(2) {
+    float: right;
+    margin-right: 300px; }
+
+header {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 0 450px 0; }
+
+.welcome h1 {
+  font-size: 55px;
+  font-variant: small-caps;
+  font-family: Roboto-thin, sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 5px; }
+.welcome p {
+  margin-top: 5px;
+  margin-bottom: 100px;
+  font-size: 26px; }
+
+.buttonTransparent {
+  border-radius: 7px;
+  padding: auto 0;
+  background-color: transparent;
+  font-family: Roboto-Light, sans-serif;
+  width: 430px;
+  height: 70px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  text-transform: uppercase; }
+
+#requires {
+  width: 60%;
+  margin: 70px auto; }
+  #requires .downloadContainer {
+    display: flex;
+    justify-content: center; }
+    #requires .downloadContainer .requirerow .Radius {
+      width: 120px;
+      border-radius: 50%;
+      border: 4.2px solid #ffd200;
+      height: 120px;
+      padding: auto auto; }
+      #requires .downloadContainer .requirerow .Radius img {
+        margin: 27.5px; }
+    #requires .downloadContainer .line {
+      border-top: 5px #ffd200 dashed;
+      margin-top: 60px;
+      width: 140px; }
+  #requires p {
+    font-size: 22px;
+    padding-top: 15px;
+    color: black;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif; }
+
+#advantage {
+  background-color: #f3f0e7;
+  text-align: center;
+  padding: 40px 0 120px 0; }
+  #advantage .advantageTitle {
+    padding-bottom: 10px;
+    font-size: 60px;
+    font-weight: 100;
+    font-variant: small-caps;
+    font-family: Roboto-thin, sans-serif; }
+  #advantage #advantageGrid {
+    display: flex;
+    margin: auto auto;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #advantage #advantageGrid div {
+      padding-top: 30px; }
+      #advantage #advantageGrid div .advantagetitles {
+        font-family: Roboto, sans-serif;
+        font-size: 26px;
+        margin: 20px 0; }
+      #advantage #advantageGrid div .advantagetext {
+        font-family: Roboto-Light, sans-serif;
+        font-size: 18px;
+        margin: 5px 0; }
+  #advantage .buttonred {
+    background-color: #e11a27;
+    border: 1px solid #e11a27;
+    margin-top: 85px; }
+    #advantage .buttonred a {
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */
