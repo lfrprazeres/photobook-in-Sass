@@ -12,6 +12,8 @@ $red: rgb(225,26,39)
         font-weight: 100
         font-variant: small-caps
         font-family: $Roboto-thin
+        @media (max-width: 768px)
+            font-size: 50px
     #advantageGrid
         display: flex
         margin: auto auto
@@ -19,8 +21,9 @@ $red: rgb(225,26,39)
         justify-content: space-between
         flex-wrap: wrap
         div
-            @media ( max-width: 1370px )
-            padding-top: 30px
+            @media ( max-width: 1024px )
+                margin: 0 auto
+                padding-top: 30px
             .advantagetitles
                 font-family: $Roboto
                 font-size: 26px
@@ -29,11 +32,16 @@ $red: rgb(225,26,39)
                 font-family: $Roboto-Light
                 font-size: 18px
                 margin: 5px 0
+            
+                    
 .buttonred
     background-color: $red
     border: 1px solid $red
     margin-top: 85px
-    width: 400px
+    max-width: 370px
     font-size: 27px
+    @media (max-width: 768px)
+        max-width: 300px
+        font-size: 21px
     a
         color: rgb(255,255,255)

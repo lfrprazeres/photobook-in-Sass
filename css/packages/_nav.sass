@@ -1,18 +1,30 @@
 #navbar
-    min-height: $viewport
+    min-height: 80px
     display: flex
     padding-top: 30px
     padding-bottom: 15px
     justify-content: space-between
-
-    div
-        height: 50%
-    div:nth-child(1)
-            margin-left: 70px
-        a:first-child
-            margin-left: 70px
-        a
-            padding: 10px
+    @media (max-width: 768px)
+        font-size: 12px
+    .menuIcon
+        margin-left: 50px
+        @media (max-width: 768px)
+            width: 50px
+            margin-left: 20px !important
+            margin-right: 10px
+    .photoLogo
+        margin-left: 50px
+        width: 250px
+        @media (max-width: 768px)
+            margin-left: 10px
+        img
+            @media (max-width: 768px)
+            width: 120px         
     div:nth-child(2)
-            float: right
-            margin-right: 300px
+            margin-right: 10%
+            @media (max-width: 768px)
+                margin-right: 5%
+                padding-top: 1px
+            a
+                @media (max-width: 768px)
+                    font-size: 12px

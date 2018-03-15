@@ -1,20 +1,23 @@
 footer
     background-color: $yellow
     padding: 50px 0 150px 0
+    @media (max-width:768px)
+        padding: 50px 0 100px 0
+
     .footerContainer
-        width: 90%
+        max-width: 1200px
+        margin: 0 auto
         display: flex
         flex-wrap: wrap
         .column123
             flex: 3
             display: flex
             flex-wrap: wrap
-            margin: 0 140px 0 80px
-            justify-content: space-between
             nav
                 padding-top: 25px
                 width: 120px
                 border-top: 1px solid black
+                margin: 0 40px 0 80px
                 @media(max-width: 928px)
                     margin-top: 20px
                 ul
@@ -24,7 +27,7 @@ footer
                     li
                         padding: 5px 0
                         font-variant: $scaps
-       
+    
             
         .column4
             flex: 1
@@ -35,7 +38,7 @@ footer
                 border-top: 1px solid black
                 padding-top: 25px
                 width: 160px
-                margin-left: 80px
+                margin-left: 75px
                 ul 
                     width: inherit
                     display: flex
@@ -44,6 +47,10 @@ footer
                    
                    
     p
+        font-size: 16px
         padding-top: 150px
         text-align: center
+        @media (max-width:768px)
+            font-size: 12px
+            padding-top: 100px
         

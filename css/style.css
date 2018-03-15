@@ -22,6 +22,9 @@
   left: 0;
   box-sizing: border-box; }
 
+html {
+  width: auto; }
+
 li {
   list-style: none; }
 
@@ -35,15 +38,33 @@ a {
   padding-top: 30px;
   padding-bottom: 15px;
   justify-content: space-between; }
-  #navbar div {
-    height: 50%; }
-  #navbar div:nth-child(1) a:first-child {
-    margin-left: 70px; }
-  #navbar div:nth-child(1) a {
-    padding: 10px; }
+  @media (max-width: 768px) {
+    #navbar {
+      font-size: 12px; } }
+  #navbar .menuIcon {
+    margin-left: 50px; }
+    @media (max-width: 768px) {
+      #navbar .menuIcon {
+        width: 50px;
+        margin-left: 20px !important;
+        margin-right: 10px; } }
+  #navbar .photoLogo {
+    margin-left: 50px;
+    width: 250px; }
+    @media (max-width: 768px) {
+      #navbar .photoLogo {
+        margin-left: 10px; } }
+    #navbar .photoLogo img {
+      width: 120px; }
   #navbar div:nth-child(2) {
-    float: right;
-    margin-right: 300px; }
+    margin-right: 10%; }
+    @media (max-width: 768px) {
+      #navbar div:nth-child(2) {
+        margin-right: 5%;
+        padding-top: 1px; } }
+    @media (max-width: 768px) {
+      #navbar div:nth-child(2) a {
+        font-size: 12px; } }
 
 header {
   background-image: url("../img/banner.jpg");
@@ -58,10 +79,18 @@ header {
   font-family: Roboto-thin, sans-serif;
   letter-spacing: 4px;
   word-spacing: 5px; }
+  @media (max-width: 768px) {
+    .welcome h1 {
+      font-size: 38px;
+      letter-spacing: 2px; } }
 .welcome p {
   margin-top: 5px;
   margin-bottom: 80px;
   font-size: 24px; }
+  @media (max-width: 768px) {
+    .welcome p {
+      font-size: 18px;
+      margin-bottom: 150px; } }
 
 .buttonTransparent {
   border-radius: 10px;
@@ -74,29 +103,46 @@ header {
   letter-spacing: 2px;
   border: 0.5px solid black;
   text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .buttonTransparent {
+      max-width: 300px;
+      font-size: 21px; } }
 
 #requires {
-  width: 60%;
-  margin: 70px auto; }
+  margin: 70px auto;
+  display: flex; }
   #requires .downloadContainer {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    @media (max-width: 768px) {
+      #requires .downloadContainer .requirerow {
+        width: 200px;
+        margin-bottom: 20px; } }
     #requires .downloadContainer .requirerow .Radius {
-      width: 120px;
       border-radius: 50%;
       border: 4.2px solid #ffd200;
-      height: 120px;
-      padding: auto auto; }
+      width: 120px; }
+      @media (max-width: 768px) {
+        #requires .downloadContainer .requirerow .Radius {
+          margin: 0 auto; } }
       #requires .downloadContainer .requirerow .Radius img {
         margin: 27.5px; }
     #requires .downloadContainer .line {
       border-top: 5px #ffd200 dashed;
       margin-top: 60px;
       width: 140px; }
-@media(max-width: 1518px) {
-  #requires .downloadContainer .l3 {
-    display: none; } }
+      @media (max-width: 768px) {
+        #requires .downloadContainer .line {
+          border: none;
+          width: 0; } }
+    @media (max-width: 1516px) {
+      #requires .downloadContainer .l3 {
+        border-top: 5px #ffd200 dashed; } }
+    @media (max-width: 883px) {
+      #requires .downloadContainer .l3 {
+        border: none; } }
   #requires p {
     font-size: 22px;
     padding-top: 15px;
@@ -114,29 +160,38 @@ header {
     font-weight: 100;
     font-variant: small-caps;
     font-family: Roboto-thin, sans-serif; }
+    @media (max-width: 768px) {
+      #advantage .advantageTitle {
+        font-size: 50px; } }
   #advantage #advantageGrid {
     display: flex;
     margin: auto auto;
     width: 80%;
     justify-content: space-between;
     flex-wrap: wrap; }
-    #advantage #advantageGrid div {
-      padding-top: 30px; }
-      #advantage #advantageGrid div .advantagetitles {
-        font-family: Roboto, sans-serif;
-        font-size: 26px;
-        margin: 20px 0; }
-      #advantage #advantageGrid div .advantagetext {
-        font-family: Roboto-Light, sans-serif;
-        font-size: 18px;
-        margin: 5px 0; }
+    @media (max-width: 1024px) {
+      #advantage #advantageGrid div {
+        margin: 0 auto;
+        padding-top: 30px; } }
+    #advantage #advantageGrid div .advantagetitles {
+      font-family: Roboto, sans-serif;
+      font-size: 26px;
+      margin: 20px 0; }
+    #advantage #advantageGrid div .advantagetext {
+      font-family: Roboto-Light, sans-serif;
+      font-size: 18px;
+      margin: 5px 0; }
 
 .buttonred {
   background-color: #e11a27;
   border: 1px solid #e11a27;
   margin-top: 85px;
-  width: 400px;
+  max-width: 370px;
   font-size: 27px; }
+  @media (max-width: 768px) {
+    .buttonred {
+      max-width: 300px;
+      font-size: 21px; } }
   .buttonred a {
     color: white; }
 
@@ -145,8 +200,14 @@ header {
   margin: 0 auto;
   padding: 100px 0;
   text-align: center; }
+  @media (max-width: 768px) {
+    #terms {
+      padding: 20px 0 30px 0; } }
   #terms .termsContainer, #terms .payment, #terms .shipping {
     width: 320px; }
+    @media (max-width: 1024px) {
+      #terms .termsContainer, #terms .payment, #terms .shipping {
+        margin: 0 auto; } }
 
 .termsGrid {
   display: flex;
@@ -163,7 +224,7 @@ header {
     background-color: #ffd200;
     border-radius: 7px 7px 0 0;
     height: 70px; }
-@media(max-width: 1200px) {
+@media(max-width: 1024px) {
   .termsGrid .h1Terms, .termsGrid .h1Payment, .termsGrid .h1Shipping {
     margin-top: 30px; } }
     .termsGrid .h1Terms h1, .termsGrid .h1Payment h1, .termsGrid .h1Shipping h1 {
@@ -191,8 +252,12 @@ header {
   background-position: center;
   padding: 30px 0 50px 0; }
   #testimonials .testimonialsContainer {
-    width: 500px;
+    max-width: 500px;
     margin: 0 0 0 80px; }
+    @media (max-width: 768px) {
+      #testimonials .testimonialsContainer {
+        text-align: center;
+        margin: 0; } }
     #testimonials .testimonialsContainer div {
       padding: 10px 0; }
   #testimonials h1 {
@@ -201,15 +266,28 @@ header {
     font-weight: 100;
     font-variant: small-caps;
     font-family: Roboto-thin, sans-serif; }
+    @media (max-width: 768px) {
+      #testimonials h1 {
+        font-size: 50px; } }
   #testimonials .row2 {
     display: flex;
     align-items: center; }
+    @media (max-width: 768px) {
+      #testimonials .row2 {
+        margin-left: 15px; } }
     #testimonials .row2 p {
-      padding-left: 30px; }
+      padding-left: 30px;
+      padding-left: 10px; }
       #testimonials .row2 p:first-child {
-        font-size: 36px; }
+        font-size: 36px;
+        font-size: 30px;
+        text-align: left; }
   #testimonials .row3 {
     margin-bottom: 100px; }
+    @media (max-width: 768px) {
+      #testimonials .row3 {
+        text-align: left;
+        margin-left: 15px; } }
     #testimonials .row3 .next {
       float: right;
       padding-top: 10px; }
@@ -221,20 +299,23 @@ header {
 footer {
   background-color: #ffd200;
   padding: 50px 0 150px 0; }
+  @media (max-width: 768px) {
+    footer {
+      padding: 50px 0 100px 0; } }
   footer .footerContainer {
-    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap; }
     footer .footerContainer .column123 {
       flex: 3;
       display: flex;
-      flex-wrap: wrap;
-      margin: 0 140px 0 80px;
-      justify-content: space-between; }
+      flex-wrap: wrap; }
       footer .footerContainer .column123 nav {
         padding-top: 25px;
         width: 120px;
-        border-top: 1px solid black; }
+        border-top: 1px solid black;
+        margin: 0 40px 0 80px; }
 @media(max-width: 928px) {
   footer .footerContainer .column123 nav {
     margin-top: 20px; } }
@@ -255,14 +336,19 @@ footer {
         border-top: 1px solid black;
         padding-top: 25px;
         width: 160px;
-        margin-left: 80px; }
+        margin-left: 75px; }
         footer .footerContainer .column4 nav ul {
           width: inherit;
           display: flex; }
           footer .footerContainer .column4 nav ul li {
             padding: 0 7px; }
   footer p {
+    font-size: 16px;
     padding-top: 150px;
     text-align: center; }
+    @media (max-width: 768px) {
+      footer p {
+        font-size: 12px;
+        padding-top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

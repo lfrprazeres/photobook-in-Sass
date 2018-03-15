@@ -1,26 +1,35 @@
 #requires
-    width: 60%
     margin: 70px auto
+    display: flex
     .downloadContainer
+        margin: auto
         display: flex
         flex-wrap: wrap
         justify-content: center
         .requirerow
+            @media (max-width: 768px)
+                width: 200px
+                margin-bottom: 20px
             .Radius
-                width: 120px
                 border-radius: 50%
                 border: 4.2px solid $yellow
-                height: 120px
-                padding: auto auto
+                width: 120px
+                @media (max-width: 768px)
+                    margin: 0 auto
                 img
                     margin: 27.5px
         .line
                 border-top: 5px $yellow dashed
                 margin-top: 60px
                 width: 140px
-        @media(max-width: 1518px)
-            .l3
-                display: none
+                @media (max-width: 768px)
+                    border: none
+                    width: 0
+        .l3
+            @media (max-width: 1516px)
+                border-top: 5px $yellow dashed
+            @media (max-width: 883px)
+                border: none
     p
         font-size: 22px
         padding-top: 15px
